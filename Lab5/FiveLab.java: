@@ -1,0 +1,27 @@
+import java.awt.*;
+import java.io.IOException;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class FiveLab {
+
+    public static void main(String avg[]) throws IOException
+    {
+        FiveLab form = new FiveLab();
+    }
+
+    public FiveLab() throws IOException
+    {
+        Image img= Toolkit.getDefaultToolkit().createImage("src//manyame.gif");
+        ImageIcon icon = new ImageIcon(img);
+        JFrame frame = new JFrame();
+        frame.setLayout(new FlowLayout());
+        frame.setSize(510,320);
+        JLabel raz = new JLabel();
+        raz.setIcon(icon);
+        frame.add(raz);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
