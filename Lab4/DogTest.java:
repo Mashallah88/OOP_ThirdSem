@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class BookTest{
+    public static void main(String[] args)
+    {
+        Book first_book = new Book ("Евгуний Онегин", "А.С. Пушкин", 1833, 239);
+        Dog Krishti = new Dog();
+        System.out.println("Введите имя, вес, рост");
+        Scanner sc = new Scanner(System.in);
+        Krishti.setName(sc.next());
+        Krishti.setWeight(sc.nextDouble());
+        Krishti.setHeight(sc.nextDouble());
+        System.out.println("Вот имена собаки и книги");
+        System.out.println(Krishti.getName());
+        System.out.println(first_book.getName());
+
+
+    }
+}
